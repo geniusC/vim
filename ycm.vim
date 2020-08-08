@@ -17,11 +17,11 @@ set completeopt=menu,menuone
 if has('patch-8.0.1000')
 	set completeopt=menu,menuone,noselect
 endif
-noremap <m-j> :YcmCompleter GoTo<CR>
-noremap <m-d> :YcmCompleter GoToDeclaration<CR>
-noremap <m-i> :YcmCompleter GoToDefinition<CR>
-noremap <m-r> :YcmCompleter GoToReferences<CR>
-noremap <m-e> :YcmDiags<CR>
+noremap <Leader>j :YcmCompleter GoTo<CR>
+noremap <Leader>d :YcmCompleter GoToDeclaration<CR>
+noremap <Leader>i :YcmCompleter GoToDefinition<CR>
+noremap <Leader>r :YcmCompleter GoToReferences<CR>
+noremap <Leader>e :YcmDiags<CR>
 
 " noremap <c-z> <NOP>
 
@@ -96,8 +96,9 @@ let g:ycm_filetype_whitelist = {
 			\ "conf":1,
 			\ "config":1,
 			\ "zimbu":1,
-			\ "ps1":1,
+			\ "ps1":1
 			\ }
+
 
 " 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
 let g:ycm_confirm_extra_conf=0

@@ -27,9 +27,9 @@ set cursorcolumn
 set hlsearch
 
 "弹出框背景色"
-highlight Pmenu ctermfg=7 ctermbg=0 
+highlight Pmenu ctermfg=darkgrey ctermbg=black guifg=darkgrey guibg=black
 " 选中项
-highlight PmenuSel ctermfg=0  ctermbg=46 
+highlight PmenuSel ctermfg=green  ctermbg=black guifg=green guibg=black
 
 set guifont=Consolas_NF:h11
 set guifontwide=LiHei_Pro:h10.5

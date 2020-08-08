@@ -36,7 +36,6 @@ set wildmenu
 " 禁止折行
 set nowrap" 禁止折行
 
-let mapleader = "\<space>"
 
 let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let g:vim_config#windows = has('win32') || has('win64') || has('win95') || has('win16')

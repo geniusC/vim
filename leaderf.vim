@@ -4,18 +4,17 @@ scriptencoding utf-8
 " keymap
 "----------------------------------------------------------------------
 let g:Lf_ShortcutF = '<c-p>'
-let g:Lf_ShortcutB = '<m-n>'
 noremap <c-n> :cclose<cr>:Leaderf --nowrap mru --regexMode<cr>
-noremap <m-p> :cclose<cr>:Leaderf! --nowrap function<cr>
-noremap <m-P> :cclose<cr>:Leaderf! --nowrap bufTag<cr>
-noremap <m-n> :cclose<cr>:Leaderf! --nowrap buffer<cr>
-noremap <m-m> :cclose<cr>:Leaderf --nowrap tag<cr>
+noremap <Leader>p :cclose<cr>:Leaderf! --nowrap function<cr>
+noremap <Leader>P :cclose<cr>:Leaderf! --nowrap bufTag<cr>
+noremap <Leader>n :cclose<cr>:Leaderf! --nowrap buffer<cr>
+noremap <Leader>m :cclose<cr>:Leaderf --nowrap tag<cr>
 let g:Lf_MruMaxFiles = 30
 "let g:Lf_StlSeparator = { 'left': get(g:, 'airline_left_sep', ''), 'right': get(g:, 'airline_right_sep', ''), 'font': '' }
 let g:Lf_StlSeparator = { 'left': "", 'right': "" }
 "let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': '' }
-noremap <m-g> :Leaderf --nowrap task<cr>
-inoremap <m-g> <esc>:Leaderf --nowrap task<cr>
+noremap <Leader>g :Leaderf --nowrap task<cr>
+inoremap <Leader>g <esc>:Leaderf --nowrap task<cr>
 
 if has('gui_running')
 	noremap <c-f12> :Leaderf --nowrap task<cr>
