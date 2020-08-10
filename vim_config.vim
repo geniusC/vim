@@ -34,7 +34,7 @@ set t_Co=256
 set wildmenu
 
 " 禁止折行
-set nowrap" 禁止折行
+set nowrap
 
 
 let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
@@ -50,8 +50,7 @@ endfunc
 function! s:path(path)
 	return bundle#path(a:path)
 endfunc
-
-
+set fileformat=unix
 
 IncScript plugins.vim
 IncScript ui.vim

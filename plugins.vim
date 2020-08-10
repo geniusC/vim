@@ -15,9 +15,12 @@ Plug 'vim-scripts/DrawIt'
 Plug 'Valloric/YouCompleteMe'
 Plug 'rhysd/vim-clang-format', {'for': ['cpp', 'c']}
 Plug 'Yggdroot/LeaderF'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rhysd/vim-clang-format'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'skywind3000/gutentags_plus'
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 call plug#end()
@@ -28,3 +31,4 @@ IncScript nerdtree.vim
 IncScript ycm.vim
 IncScript clang-format.vim
 IncScript asyncrun.vim
+IncScript gutentags.vim
