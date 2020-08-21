@@ -6,6 +6,7 @@ let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
+let g:gutentags_exclude_filetypes = ['text', 'vim', 'cmake']
 " 如果使用 universal ctags 需要增加下面一行，老的 Exuberant-ctags 不能加下一行
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 

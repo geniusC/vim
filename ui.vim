@@ -27,7 +27,7 @@ set cursorcolumn
 set hlsearch
 
 "弹出框背景色"
-highlight Pmenu ctermfg=darkgrey ctermbg=black guifg=darkgrey guibg=black
+highlight Pmenu ctermfg=grey ctermbg=black guifg=grey guibg=black
 " 选中项
 highlight PmenuSel ctermfg=green  ctermbg=black guifg=green guibg=black
 

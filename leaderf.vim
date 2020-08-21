@@ -13,8 +13,8 @@ let g:Lf_MruMaxFiles = 30
 "let g:Lf_StlSeparator = { 'left': get(g:, 'airline_left_sep', ''), 'right': get(g:, 'airline_right_sep', ''), 'font': '' }
 let g:Lf_StlSeparator = { 'left': "", 'right': "" }
 "let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': '' }
-noremap <Leader>g :Leaderf --nowrap task<cr>
-inoremap <Leader>g <esc>:Leaderf --nowrap task<cr>
+noremap <silent> <Leader>g :Leaderf! --nowrap --popup --popup-width=60 task<cr>
+inoremap <silent> <Leader>g<esc> :Leaderf! --nowrap --popup --popup-width=60 task<cr>
 
 if has('gui_running')
 	noremap <c-f12> :Leaderf --nowrap task<cr>
@@ -40,7 +40,7 @@ let g:Lf_WildIgnore = {
 
 let g:Lf_MruFileExclude = ['*.so', '*.exe', '*.py[co]', '*.sw?', '~$*', '*.bak', '*.tmp', '*.dll']
 let g:Lf_MruMaxFiles = 2048
-let g:Lf_StlColorscheme = 'airline'
+let g:Lf_StlColorscheme = 'dark'
 let g:Lf_ShortcutF = '<c-p>'
 let g:Lf_ShortcutB = '<m-n>'
 let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}

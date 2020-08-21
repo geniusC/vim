@@ -51,6 +51,11 @@ function! s:path(path)
 	return bundle#path(a:path)
 endfunc
 set fileformat=unix
+" 自动关闭最后的quicklist
+aug QFClose
+  au!
+  au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+aug END
 
 IncScript plugins.vim
 IncScript ui.vim
