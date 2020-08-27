@@ -56,6 +56,7 @@ aug QFClose
   au!
   au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
 aug END
+set termwinsize=10x0
 
 IncScript plugins.vim
 IncScript ui.vim

@@ -5,9 +5,9 @@ scriptencoding utf-8
 "----------------------------------------------------------------------
 let g:Lf_ShortcutF = '<c-p>'
 noremap <c-n> :cclose<cr>:Leaderf --nowrap mru --regexMode<cr>
-noremap <Leader>p :cclose<cr>:Leaderf! --nowrap function<cr>
-noremap <Leader>P :cclose<cr>:Leaderf! --nowrap tag<cr>
-noremap <Leader>n :cclose<cr>:Leaderf! --nowrap buffer<cr>
+noremap <Leader>p :cclose<cr>:Leaderf --nowrap function<cr>
+noremap <Leader>P :cclose<cr>:Leaderf --nowrap tag<cr>
+noremap <Leader>n :cclose<cr>:Leaderf --nowrap buffer<cr>
 noremap <Leader>m :cclose<cr>:Leaderf --nowrap bufTag<cr>
 let g:Lf_MruMaxFiles = 30
 "let g:Lf_StlSeparator = { 'left': get(g:, 'airline_left_sep', ''), 'right': get(g:, 'airline_right_sep', ''), 'font': '' }
